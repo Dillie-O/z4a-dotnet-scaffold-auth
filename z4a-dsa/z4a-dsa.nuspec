@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>z4a-dotnet-scaffold-auth</id>
+    <version>1.0.0.3</version>
+    <title>Zurb Foundation For Apps Scaffolding with Authentication</title>
+    <authors>Sean Patterson</authors>
+    <owners>Sean Patterson</owners>
+    <licenseUrl>https://github.com/Dillie-O/z4a-dotnet-scaffold-auth/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Dillie-O/z4a-dotnet-scaffold-auth</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A scaffold for building an application with Zurb for Applications and .Net that includes OWIN Token based authentication.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>zurb foundation webapi angularjs owin authentication token</tags>
+  </metadata>
+</package>

@@ -1,0 +1,21 @@
+---
+name: signup
+url: /signup
+controller: SignupController
+---
+
+<h1>Register for an Account</h1>
+
+<form class="form-login" role="form">
+    <h2 class="form-login-heading">Sign up</h2>
+    <input type="text" class="form-control" placeholder="Username" data-ng-model="registration.userName" required autofocus>
+    <input type="password" class="form-control" placeholder="Password" data-ng-model="registration.password" required>
+    <input type="password" class="form-control" placeholder="Confirm Password" data-ng-model="registration.confirmPassword" required>
+    <input type="text" class="form-control" placeholder="First Name" data-ng-model="registration.FirstName" required>
+    <input type="text" class="form-control" placeholder="Last Name" data-ng-model="registration.LastName" required>
+    <input type="text" class="form-control" placeholder="E-mail Address" data-ng-model="registration.Email" required>
+    <button class="btn btn-lg btn-info btn-block" type="submit" data-ng-click="signUp()">Submit</button>
+    <div data-ng-hide="message == ''" data-ng-class="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
+        {{message}}
+    </div>
+</form>

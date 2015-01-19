@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html lang="en" ng-app="application">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Angular</title>
+    <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="/assets/js/foundation.js"></script>
+    <script src="/assets/js/routes.js"></script>
+    <script src="/assets/js/app.js"></script>    
+  </head>
+  <body>
+    <div class="grid-frame vertical">
+      <div class="grid-content shrink" style="padding: 0;">
+        <ul class="primary condense menu-bar" ng-controller="IndexController">
+            <li><a><strong>Foundation for Apps</strong></a></li>
+            <li class="ng-hide" ng-hide="!authentication.isAuth"><a ui-sref="home">Home</a></li>
+            <li class="ng-hide" ng-hide="!authentication.isAuth"><a ui-sref="about">About</a></li>
+            <li class="ng-hide" ng-hide="!authentication.isAuth"><a ui-sref="news">News</a></li>
+            <li class="ng-hide" ng-hide="!authentication.isAuth"><a ui-sref="contact">Contact</a></li>
+            <li class="ng-hide" ng-hide="!authentication.isAuth"><a ng-click="logOut()">Logout</a></li>            
+            <li ng-hide="authentication.isAuth"><a ui-sref="signup">Sign Up</a></li>
+            <li ng-hide="authentication.isAuth"><a ui-sref="login">Login</a></li>            
+        </ul>          
+      </div>
+      <div class="grid-content">
+        <div class="grid-container">
+          <div ng-class="['ui-animation']" ui-view></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
